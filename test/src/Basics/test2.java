@@ -3,7 +3,7 @@ package Basics;
 /**
  * Experimenting with Class
  * Class name should use capital Letter: e.g. Dog, Person
- * Other variables should use this format: e.g. myLastName
+ * Other variables should use this format: e.g. myLastNameIsZhou
  */
 
 public class Test2 {

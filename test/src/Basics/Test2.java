@@ -1,7 +1,7 @@
 package Basics;
 
 /**
- * Enhanced for loop
+ * Enhanced for loop.
  */
 
 public class Test2 {

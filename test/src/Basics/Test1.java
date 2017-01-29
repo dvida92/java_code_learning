@@ -1,7 +1,7 @@
 package Basics;
 
 /**
- * Analysis of RAM
+ * Analysis of RAM Good Good :)
  */
 public class Test1 {
 

@@ -4,6 +4,9 @@ package Basics;
  * Experimenting with Class
  * Class name should use capital Letter: e.g. Dog, Person
  * Other variables should use this format: e.g. myLastNameIsZhou
+ *
+ * What is reference type?
+ * RAM: Code segment, Stack segment, Heap segment
  */
 
 public class Test3 {
@@ -15,15 +18,15 @@ public class Test3 {
 
     }
 
-    //Another constructor: "new" will use this constructor
+    //Another constructor: "new" with parameters will use this constructor
     Test3(int i, int j) {
         this.i = i;
         this.j = j;
     }
 
     public static void main(String[] args) {
-        Test3 t1 = new Test3(); //t1 is a pointer that points to the memory when "new" in the heap segment
-        Test3 t2 = new Test3(); //Analysis of RAM: t1 and t2 are in code segment, whereas t1.i,t1.j,t2.i and t2.j are in heap segment.
+        Test3 t1 = new Test3(); //t1 is a pointer that points to the memory when "new" create a place in the heap segment
+        Test3 t2 = new Test3(); //Analysis of RAM: t1 and t2 are in stack segment, whereas t1.i,t1.j,t2.i and t2.j are in heap segment.
         Test3 t3 = new Test3(1,2);
         System.out.println(t1.i);
         System.out.println(t2.j);

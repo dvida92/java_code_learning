@@ -1,4 +1,4 @@
-package Basics;
+package CS112;
 import java.util.*;
 
 /**

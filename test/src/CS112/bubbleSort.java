@@ -1,11 +1,12 @@
 package CS112;
 
 /**
- * Created by davidzhou on 2/7/17.
+ * Bubble Sort: https://en.wikipedia.org/wiki/Bubble_sort
+ *  Relatively inefficient!
  */
 public class bubbleSort {
 
-    //Version 1
+    //Version 1 loops n-1 times
     public static void sort(int [] a) {
         for(int pass = 0; pass < a.length - 1; pass++) {
             for(int i = 0; i < a.length - 1 - pass; i ++) {
@@ -19,7 +20,7 @@ public class bubbleSort {
     }
 
 
-    //Version 2 with a flag
+    //Version 2 with an end condition
     public static void sort2(int [] a) {
 
         /** The usage of FLAG */

@@ -26,7 +26,7 @@ public class bubbleSort {
         /** The usage of FLAG */
         boolean timeToQuit = false;
 
-        for(int pass = 0; !timeToQuit; pass++) {
+        for(int pass = 0; !timeToQuit && pass < a.length - 1; pass++) {
             for(int i = 0; i < a.length - 1 - pass; i ++) {
                 if(a[i] > a[i + 1]) {
                     int tmp = a[i + 1];
@@ -41,6 +41,10 @@ public class bubbleSort {
 
 
     public static void main(String[] args) {
-
+        int a[] = {3, 2, 1};
+        bubbleSort.sort2(a);
+        for (int i = 0; i < a.length ; i++) {
+            System.out.println(a[i]);
+        }
     }
 }

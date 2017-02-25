@@ -2,7 +2,7 @@ package CS112;
 import java.util.*;
 
 /**
- * My selection sort
+ * My selectionSortRe sort
  */
 public class selectionSort {
 

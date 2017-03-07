@@ -1,7 +1,7 @@
 package Basics;
 
 /**
- *  String and Char test
+ *  String and Char StackParseString
  */
 public class Test14 {
 

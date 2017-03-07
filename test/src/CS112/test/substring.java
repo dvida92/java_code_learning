@@ -8,8 +8,8 @@ import java.util.Arrays;
 public class substring {
     public static void main(String[] args) {
 
-        String [] s2 = {"123","223"};
-        System.out.println(Arrays.toString(s2));
+        int[]a = {1,2,3,4};
+        System.out.println(a);
 
     }
 }

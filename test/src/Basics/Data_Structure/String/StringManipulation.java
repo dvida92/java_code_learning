@@ -1,4 +1,4 @@
-package Basics.String;
+package Basics.Data_Structure.String;
 
 /**
  * Created by davidzhou on 3/4/17.

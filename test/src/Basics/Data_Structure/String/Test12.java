@@ -1,4 +1,4 @@
-package Basics.String;
+package Basics.Data_Structure.String;
 
 /**
  *  Class: String - StackParseString "compareTo" method

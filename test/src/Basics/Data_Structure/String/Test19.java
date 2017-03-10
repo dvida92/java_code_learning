@@ -1,4 +1,4 @@
-package Basics.String;
+package Basics.Data_Structure.String;
 
 /**
  * Manipulation on String

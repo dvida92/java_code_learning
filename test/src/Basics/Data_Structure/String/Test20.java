@@ -1,6 +1,4 @@
-package Basics.String;
-
-import java.util.LinkedList;
+package Basics.Data_Structure.String;
 
 /**
  * Created by davidzhou on 2/14/17.

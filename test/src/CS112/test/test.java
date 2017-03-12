@@ -1,6 +1,7 @@
 package CS112.test;
 
 
+import java.util.Arrays;
 
 /**
  * Created by davidzhou on 3/7/17.
@@ -9,9 +10,11 @@ public class test {
 
     public static void main(String[] args) {
 
-        char c = '1';
-        int num = Character.getNumericValue(c);
-        System.out.println(num);
+        int [] a = {1,2,3,4};
+        int b = Arrays.binarySearch(a, 4);
+        System.out.println(b);
 
     }
+
+
 }

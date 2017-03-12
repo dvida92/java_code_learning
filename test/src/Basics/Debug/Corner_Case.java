@@ -1,7 +1,7 @@
 package Basics.Debug;
 
 /**
- * Some errors result from primitive types (integer nad real number)
+ * Demonstrate some errors resulting from primitive types (integer and real number)
  */
 public class Corner_Case {
     public static void main(String[] args) {
@@ -10,14 +10,15 @@ public class Corner_Case {
         int a = 1;
         int b = 2;
         System.out.println("1.Integer Division returns " +
-                "a truncated integer: " + a/b);
+                "a truncated integer: " + a / b);
 
         double x = 1 / 5;
         System.out.println("1.1Integer Division: 1 and 5 are both integers:" +
                 " " + x);
+
         //Case 2: Integer Overflow returns a value from somewhere
         // in the legal range but not the right answer
-        int c = 2000000000;
+        int c = 2000000000; //-2^31 to 2^31 ≈ 2 billion
         System.out.println("2.Integer overflow: " + c * 2);
 
         //Case 3

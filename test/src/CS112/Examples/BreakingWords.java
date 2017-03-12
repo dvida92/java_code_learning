@@ -35,6 +35,6 @@ public class BreakingWords {
         dict.add("use");
         dict.add("at");
         dict.add("eat");
-        System.out.println(space(dict, "today"));
+        System.out.println(space(dict, "toaday"));
     }
 }

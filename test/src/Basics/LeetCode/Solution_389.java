@@ -20,6 +20,10 @@ public class Solution_389 {
             }
             if(flag == false) return c2[i];
         }
+
+        /*
+            使用exception来解决函数返回值的问题
+         */
         throw new IllegalArgumentException("String's wrong!");
     }
 

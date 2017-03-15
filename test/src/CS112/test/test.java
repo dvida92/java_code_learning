@@ -9,11 +9,14 @@ import java.util.Arrays;
 public class test {
 
     public static void main(String[] args) {
+        int [] num1 = {1,2,3,4,5};
+        int [] subArray = Arrays.copyOfRange(num1, 1, num1.length);
+        System.out.println(Arrays.toString(subArray));
+        for (int i :
+                subArray) {
+            System.out.println(i);
 
-        int [] a = {1,2,3,4};
-        int b = Arrays.binarySearch(a, 4);
-        System.out.println(b);
-
+        }
     }
 
 

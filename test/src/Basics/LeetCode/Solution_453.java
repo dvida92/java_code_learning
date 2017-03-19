@@ -5,7 +5,7 @@ package Basics.LeetCode;
 /**
  * Minimum Moves to Equal Array Elements
  * https://leetcode.com/problems/minimum-moves-to-equal-array-elements/#/description
- * Summary: 等价变换思维;这道题重点还是数学思想，编程仅仅是执行部分。
+ * Summary: mathematical approach: 等价变换思维;这道题重点还是数学思想，编程仅仅是执行部分。
  */
 public class Solution_453 {
 

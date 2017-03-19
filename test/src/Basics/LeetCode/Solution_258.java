@@ -28,7 +28,7 @@ public class Solution_258 {
     }
 
     /**
-     * To calculate the digital root, we use congruence formula
+     * Mathematical Approach: To calculate the digital root, we use congruence formula
      * Link: https://en.wikipedia.org/wiki/Digital_root
      */
     public static int addDigit2(int num) {

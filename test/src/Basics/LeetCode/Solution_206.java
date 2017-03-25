@@ -14,9 +14,15 @@ public class Solution_206 {
          ListNode(int x) { val = x; }
      }
 
-    public class Solution {
 
-        public ListNode reverseList(ListNode head) {
+        //TODO: Shift + tab 选中代码整体向左平移
+
+    /**
+     * Iterative Algorithm
+     * @param head
+     * @return
+     */
+    public ListNode reverseList(ListNode head) {
             if (head == null) {
                 return null;
             }
@@ -30,5 +36,17 @@ public class Solution_206 {
 
             return newHead;
         }
+
+    /**
+     * Recursive Algorithm
+     * @param head
+     * @return
+     */
+    public ListNode reverseListRecur(ListNode head) {
+        return null;
+
     }
+
+
+
 }

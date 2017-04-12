@@ -32,7 +32,7 @@ public class Solution_383 {
 
     /**
      *  A better version: why this is better than mine?
-     */
+            */
 
     public static boolean canConstruct2(String ransomNote, String magazine) {
         char[] ran = ransomNote.toCharArray();

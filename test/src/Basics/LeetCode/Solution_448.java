@@ -1,6 +1,8 @@
 package Basics.LeetCode;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -10,22 +12,51 @@ import java.util.List;
  */
 public class Solution_448 {
 
+
+
     /**
-     * 超时
+     * Use an extra array to tally the occurrence
      * @param nums
      * @return
      */
-    public static List<Integer> findDisapprearedNumbers(int[] nums) {
-        List<Integer> ret = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            ret.add(i + 1);
+    public List<Integer> findDisapprearedNumbers1(int[] nums) {
+
+        int length = nums.length;
+        int[] tally = new int[length];
+        for(int i = 0; i < length; i++) {
+            tally[nums[i] - 1]++;
         }
 
-        for (int i = 0; i < nums.length; i++) {
-            if (ret.get(nums[i] - 1) > 0) ret.set(nums[i] - 1, 0);
+        List<Integer> ret = new LinkedList<>();
+        for(int i = 0; i < length; i++) {
+            if(tally[i] == 0) {
+                ret.add(i + 1);
+            }
         }
 
-        while (ret.contains((Integer)0)) ret.remove((Integer) 0);
+        return ret;
+    }
+
+
+    /**
+     * Using hashset to iterate twice
+     * @param nums
+     * @return
+     */
+    public List<Integer> findDisapprearedNumbers2(int[] nums) {
+
+        List<Integer> ret = new LinkedList<>();
+        HashSet<Integer> hashSet = new HashSet<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            hashSet.add(nums[i]);
+        }
+
+        for (int i = 1; i <= nums.length; i++) {
+            if (!hashSet.contains(i)) {
+                ret.add(i);
+            }
+        }
 
         return ret;
     }

@@ -8,7 +8,7 @@ import java.util.LinkedList;
  *  Common Shortcuts illustrated in main method
  * Created by davidzhou on 4/9/17.
  */
-public class Intellij_Shortcut {
+public class Intellij_Key_Shortcut {
 
     /**
      * IntelliJ Template: Iterator

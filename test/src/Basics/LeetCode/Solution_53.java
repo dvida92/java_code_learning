@@ -36,13 +36,34 @@ public class Solution_53 {
      * @return
      */
     public static int maxSubArray1(int[] nums) {
+        int max = nums[0];
+        int[] memo = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            max = Math.max(DP(nums, i, memo), max);
+        }
 
-        return 0;
+        return max;
+    }
+
+    public static int DP(int[] nums, int i, int[] memo) {
+
+        if (i == 0) return nums[0];
+        if (memo[i] != 0) return memo[i];
+
+        int answer = DP(nums, i - 1, memo) > 0? DP(nums, i - 1, memo) + nums[i] : nums[i];
+        memo[i] = answer;
+        return answer;
+
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,-1,2,3};
+        int[] nums = {1,-1,2,3, 6};
         System.out.println(maxSubArray(nums));
         System.out.println(maxSubArray1(nums));
+
+
+
     }
+
+
 }

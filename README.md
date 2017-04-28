@@ -1,4 +1,4 @@
 # java_code_learning
-My 1st repository
+This is a repository to study Java and Algorithm
 
-Hey guys! This is just a test.
+

@@ -8,6 +8,11 @@ class Person {
     private String name;
     private int age;
 
+    public Person() {
+        name = "Default Name in Person";
+        age = 100;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -24,11 +29,20 @@ class Person {
     public String getInfo() {
         return "Name: " + name + "\n" + "Age: " + age;
     }
+
+
 }
 
 //Subclass "Stu"(子类) inherits superclass "Person"（基类）
 class Stu extends Person {
     private String school;
+
+    public Stu() {
+        super();
+        school = "Boston University";
+    }
+
+
     public String getSchool() {
         return school;
     }
@@ -42,15 +56,24 @@ class Stu extends Person {
     public String getInfo() {
         return "Name: " + getName() + "\n" + "Age: " + getAge()
                 + "\n" + "School: " + school;
-     }
+    }
+
+    public void test() {
+        System.out.println(super.getInfo());
+    }
 }
 
 public class Test8 {
     public static void main(String[] args) {
         Stu s1 = new Stu();
-        s1.setName("David");
-        s1.setAge(10);
-        s1.setSchool("Boston University");
+//        s1.setName("David");
+//        s1.setAge(10);
+//        s1.setSchool("Boston University");
         System.out.println(s1.getInfo());
+        s1.test();
+
+        Person o = new Stu(); //Dynamic Binding
+        System.out.println(o);
+
     }
 }

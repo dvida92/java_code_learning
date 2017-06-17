@@ -112,6 +112,7 @@ public class Intellij_Key_Shortcut {
         //Inheritance relation: ctrl + h
         //Run context configuration(current tab program): ctrl + shift + R
         //Refactor this: ctrl + T
+        //Comment a block: command + /
 
 
         //Insert Live Template: command + J

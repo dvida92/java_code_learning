@@ -19,15 +19,39 @@ public class Solution_110 {
 
 
     /**
-     * If every node's two subtrees are balanced
+     * Determine if every node's two subtrees are balanced
+     * Use a helper method to calculate the max depth of a sub-tree
      * @param root
      * @return
      */
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
-        if (root.left == null && root.right == null) return true;
-        if (root.left == null || root.right == null) return false;
+
+//        if (root.left != null && root.right == null) {
+//            if (maxDepth(root.left) == 1) return true;
+//            return false;
+//        }
+//
+//        if (root.left == null && root.right != null) {
+//            if (maxDepth(root.right) == 1) return true;
+//            return false;
+//        }
+
+        if (Math.abs(maxDepth(root.left) - maxDepth(root.right)) > 1) return false;
+
         return isBalanced(root.left) && isBalanced(root.right);
+
+
+    }
+
+    /**
+     *
+     * @param root
+     * @return The max depth of a tree
+     */
+    private int maxDepth(TreeNode root) {
+        if (root == null) return 0;
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
 }
